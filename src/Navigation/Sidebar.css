@@ -1,0 +1,14 @@
+.Sidebar {
+  height: 100%;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.Sidebar-list {
+  list-style-type: disc;
+}
+
+.Sidebar-list-item {
+  padding: 10px;
+}
