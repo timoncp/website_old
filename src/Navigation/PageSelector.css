@@ -1,0 +1,56 @@
+.PageSelector {
+  position: relative;
+  width: 200px;
+  background: rgba(255, 255, 255, 0.3);
+  color: white;
+  user-select: none;
+}
+
+.PageSelector-selected {
+  border: 1px white solid;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.PageSelector-list {
+  list-style: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+  background: inherit;
+  width: inherit;
+}
+
+.PageSelector-list > li {
+  padding: 10px;
+  border: 1px white solid;
+  border-top: none;
+}
+
+.PageSelector-list a {
+  text-decoration: none;
+}
+
+.PageSelector-list a:focus,
+.PageSelector-list a:hover,
+.PageSelector-list a:visited,
+.PageSelector-list a:link,
+.PageSelector-list a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+.PageSelector-list > li:hover {
+  background: rgba(255, 255, 255, 0.8);
+  color: #4b134f;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+.PageSelector-list {
+  position: absolute;
+}

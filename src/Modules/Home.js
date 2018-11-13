@@ -1,7 +1,14 @@
 import React from 'react';
 
-const Home = () => (
-  <h2>Home</h2>
-);
+import PageSelector from '../Navigation/PageSelector';
 
-export default Home;
+import './Home.css';
+
+export default () => (
+  <div className='Wallpaper'>
+    <h2 className='Heading'>
+    {`Hi, my name is Tim.\nWhat would you like to see?\n`}
+    </h2>
+    <PageSelector />
+  </div>
+);
