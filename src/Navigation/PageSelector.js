@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { withRouter } from 'react-router-dom';
+import classNames from 'classnames';
 
 import modules from '../Modules';
 
@@ -36,21 +37,27 @@ const PageSelector = (props) => {
     }
   }
 
+  const cls = classNames('PageSelector', {
+    sm: props.size === 'sm'
+  });
+
   return (
-    <div className='PageSelector'>
+    <div className={cls}>
       <div
         className='PageSelector-selected'
         onClick={() => setVisibility(!areOptionsVisible)}
       >
-      Choose wisely...
+      <span>Choose wisely...</span>
       { areOptionsVisible ? caretTop : caretBottom }
       </div>
       {
         areOptionsVisible &&
         <ul className='PageSelector-list'>
           {
-            modules.map(mod =>
-              <li onClick={() => props.history.push(mod.path)}>{mod.name}</li>
+            modules.map((mod, i) =>
+              <li key={i} onClick={() => props.history.push(mod.path)}>
+                {mod.name}
+              </li>
             )
           }
         </ul>

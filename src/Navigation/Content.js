@@ -1,13 +1,19 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
 
-import Modules from '../Modules';
+import { HomeModule, GeneralModules } from '../Modules';
+import genericPage from '../Modules/GenericPageTemplate';
 
 import './Content.css';
 
 const Content = () => (
-  <div className='Content'>
-    { Modules.map(mod => <Route { ...mod } />) }
+  <div className='Content Wallpaper'>
+    <Route { ...HomeModule } />
+    {
+      GeneralModules.map(mod =>
+        <Route { ...mod } component={genericPage(mod.component, mod.name)} key={mod.name} />
+      )
+    }
   </div>
 );
 

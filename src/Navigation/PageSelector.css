@@ -6,6 +6,16 @@
   user-select: none;
 }
 
+.PageSelector.sm {
+  width: 140px;
+  font-size: 0.8em;
+}
+
+.PageSelector.sm svg {
+  width: 15px;
+  height: 15px;
+}
+
 .PageSelector-selected {
   border: 1px white solid;
   padding: 10px;

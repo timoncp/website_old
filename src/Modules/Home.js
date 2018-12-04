@@ -5,10 +5,10 @@ import PageSelector from '../Navigation/PageSelector';
 import './Home.css';
 
 export default () => (
-  <div className='Wallpaper'>
-    <h2 className='Heading'>
+  <div className='Container'>
+    <h1 className='Heading'>
     {`Hi, my name is Tim.\nWhat would you like to see?\n`}
-    </h2>
+    </h1>
     <PageSelector />
   </div>
 );

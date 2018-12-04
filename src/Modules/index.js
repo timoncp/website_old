@@ -1,13 +1,23 @@
 import Home from './Home';
+import About from './About';
 import Dashboard from './Dashboard';
-import OtherThings from './OtherThings';
+import PreviousWork from './PreviousWork';
+import ProductivitySystem from './ProductivitySystem';
+import ReadingList from './ReadingList';
+import SnakeGame from './SnakeGame.js';
 
-const modules = [
+export const HomeModule = {
+  path: '/',
+  exact: true,
+  component: Home,
+  name: 'Home',
+};
+
+export const GeneralModules = [
   {
-    path: '/',
-    exact: true,
-    component: Home,
-    name: 'Home',
+    path: '/about',
+    component: About,
+    name: 'About',
   },
   {
     path: '/dashboard',
@@ -15,10 +25,25 @@ const modules = [
     name: 'Dashboard',
   },
   {
-    path: '/other_things',
-    component: OtherThings,
-    name: 'Other things',
+    path: '/previous_work',
+    component: PreviousWork,
+    name: 'Previous Work',
+  },
+  {
+    path: '/productivity',
+    component: ProductivitySystem,
+    name: 'Productivity System',
+  },
+  {
+    path: '/reading',
+    component: ReadingList,
+    name: 'Reading List',
+  },
+  {
+    path: '/snake',
+    component: SnakeGame,
+    name: 'Snake Game',
   },
 ];
 
-export default modules;
+export default [HomeModule].concat(GeneralModules);
