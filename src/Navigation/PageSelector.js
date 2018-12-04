@@ -1,5 +1,7 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { withRouter } from 'react-router-dom';
+
+import modules from '../Modules';
 
 import './PageSelector.css';
 
@@ -15,23 +17,46 @@ const caretTop = (
   </svg>
 );
 
-export default () => {
+const PageSelector = (props) => {
   const [areOptionsVisible, setVisibility] = useState(false);
+
+  useEffect(() => {
+    document.addEventListener('click', handleVisibilityChange);
+
+    return () => {
+      document.removeEventListener('click', handleVisibilityChange);
+    };
+  }, [areOptionsVisible]);
+
+  function handleVisibilityChange(e) {
+    const box = document.getElementsByClassName('PageSelector')[0];
+
+    if (e.target !== box && !box.contains(e.target)) {
+      setVisibility(false);
+    }
+  }
 
   return (
     <div className='PageSelector'>
-      <div className='PageSelector-selected' onClick={() => setVisibility(!areOptionsVisible)}>
+      <div
+        className='PageSelector-selected'
+        onClick={() => setVisibility(!areOptionsVisible)}
+      >
       Choose wisely...
       { areOptionsVisible ? caretTop : caretBottom }
       </div>
       {
         areOptionsVisible &&
         <ul className='PageSelector-list'>
-          <li><Link to='/'>Home</Link></li>
-          <li><Link to='/dashboard'>Dashboard</Link></li>
-          <li><Link to='/other_things'>Other things</Link></li>
+          {
+            modules.map(mod =>
+              <li onClick={() => props.history.push(mod.path)}>{mod.name}</li>
+            )
+          }
         </ul>
       }
     </div>
   );
-}
+};
+
+export default withRouter(PageSelector);

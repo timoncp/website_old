@@ -28,22 +28,10 @@
   border-top: none;
 }
 
-.PageSelector-list a {
-  text-decoration: none;
-}
-
-.PageSelector-list a:focus,
-.PageSelector-list a:hover,
-.PageSelector-list a:visited,
-.PageSelector-list a:link,
-.PageSelector-list a:active {
-  text-decoration: none;
-  color: inherit;
-}
-
 .PageSelector-list > li:hover {
   background: rgba(255, 255, 255, 0.8);
   color: #4b134f;
+  cursor: pointer;
 }
 
 .icon {
