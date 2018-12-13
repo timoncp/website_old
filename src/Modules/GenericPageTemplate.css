@@ -5,26 +5,36 @@
 }
 
 .GenericPage-top-bar {
-  display: inline-block;
-  text-align: center;
-  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
-}
-
-.GenericPage-top-bar > .PageSelector {
-  position: absolute;
-  top: 12px;
-  right: 31px;
+  width: 100%;
+  padding: 25px;
+  box-sizing: border-box;
 }
 
 .GenericPage-heading {
   display: inline-block;
 }
 
+.GenericPage-top-bar > .PageSelector {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  margin: 25px 30px;
+}
+
 .GenericPage-content-area {
-  border-radius: 5px;
-  border: 1px solid white;
   flex: 1;
-  margin: 20px 30px;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.2);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.GenericPage-content-area .heading {
+  text-align: center;
+  margin: 10px 0;
 }
