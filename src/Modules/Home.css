@@ -9,7 +9,6 @@
 .Navigation {
   display: flex;
   flex: 1;
-
   align-items: center;
 }
 
@@ -37,15 +36,25 @@
   margin: 10px 0;
 }
 
-.Socials-Container {
-  flex: 0.1;
+.PersonalCorner {
+  color: white;
+  position: absolute;
+  bottom: 2%;
+  right: 2%;
+  min-width: 250px;
+  height: 38px;
+  line-height: 38px;
+  text-align: right;
+  font-size: 12px;
+}
+
+.SocialCorner {
   display: flex;
+  position: absolute;
+  top: 2%;
+  right: 2%;
 }
 
-.Socials-Container > div {
-  margin-right: 15px;
-}
-
-.Socials-Container > div:last-of-type {
-  margin: 0;
+.SocialCorner > div:last-child .SocialSVGIcon-Tooltip {
+  left: -160%;
 }

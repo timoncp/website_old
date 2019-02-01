@@ -7,7 +7,49 @@
   padding: 5px;
   border-radius: 0px;
 
-  background-color: rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+
+  position: relative;
+}
+
+.SocialSVGIcon-Tooltip {
+  display: none;
+  position: absolute;
+  bottom: -90%;
+  left: auto;
+
+  background-color: white;
+  color: darkslategray;
+  font-size: 12px;
+  border-radius: 5px;
+  padding: 2px;
+  width: auto;
+
+  white-space: nowrap;
+}
+
+.SocialSVGIcon-Container:hover .SocialSVGIcon-Tooltip {
+  display: block;
+}
+
+.SocialSVGIcon-CustomAnchor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.SocialSVGIcon-CustomAnchor:focus,
+.SocialSVGIcon-CustomAnchor:hover,
+.SocialSVGIcon-CustomAnchor:visited,
+.SocialSVGIcon-CustomAnchor:link,
+.SocialSVGIcon-CustomAnchor:active {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
 }
 
 .SocialSVGIcon {
@@ -20,7 +62,6 @@
   width: 18px;
 
   border-radius: 20px;
-  background-color: white;
 }
 
 .SocialSVGIcon > svg {
