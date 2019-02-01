@@ -1,0 +1,19 @@
+.CustomRouterLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.CustomRouterLink:focus,
+.CustomRouterLink:hover,
+.CustomRouterLink:visited,
+.CustomRouterLink:link,
+.CustomRouterLink:active {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}

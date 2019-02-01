@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { withRouter } from 'react-router-dom';
 import classNames from 'classnames';
+import Link from './Link';
 
 import modules from '../Modules';
 
@@ -55,8 +56,10 @@ const PageSelector = (props) => {
         <ul className='PageSelector-list'>
           {
             modules.map((mod, i) =>
-              <li key={i} onClick={() => props.history.push(mod.path)}>
-                {mod.name}
+              <li key={mod.name}>
+                <Link to={mod.path}>
+                  {mod.name}
+                </Link>
               </li>
             )
           }

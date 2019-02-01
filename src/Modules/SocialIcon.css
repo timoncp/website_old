@@ -1,0 +1,30 @@
+.SocialSVGIcon-Container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 5px 0px;
+  padding: 5px;
+  border-radius: 10px;
+
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.SocialSVGIcon {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  height: 18px;
+  width: 18px;
+
+  border-radius: 20px;
+  background-color: white;
+}
+
+.SocialSVGIcon > svg {
+  /* fill: white; */
+  flex: 1;
+  transform: scale(1.05);
+}

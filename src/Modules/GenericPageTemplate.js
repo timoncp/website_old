@@ -1,5 +1,4 @@
 import React from 'react';
-
 import PageSelector from '../Navigation/PageSelector';
 
 import './GenericPageTemplate.css';

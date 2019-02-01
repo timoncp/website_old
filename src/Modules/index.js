@@ -17,7 +17,7 @@ export const GeneralModules = [
     name: 'About',
   },
   {
-    path: '/previous_work',
+    path: '/previous-work',
     component: PreviousWork,
     name: 'Previous Work',
   },
