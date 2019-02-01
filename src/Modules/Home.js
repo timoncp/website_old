@@ -34,12 +34,6 @@ const Home = (props) => {
           />
         </div>
       </div>
-      <div className='Socials-Container'>
-        <SocialBar name='github' label='@timoncp' />
-        <SocialBar name='linkedIn' label='Add me' />
-        <SocialBar name='insta' label='@vanwhosville' />
-        <SocialBar name='mail' label='Email' />
-      </div>
     </div>
   );
 }

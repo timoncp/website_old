@@ -5,11 +5,11 @@ import Link from '../Navigation/Link';
 import './InstaTextBox.css';
 
 const palette = {
-  pink: '#c32aa3',
+  pink: '#cc2a89',
   blue: '#42c8f4',
   green: '#8ee03c',
-  yellow: '#f1d03b',
-  red: '#ff6868'
+  yellow: '#f0c33b',
+  red: '#e85353'
 };
 
 function getSplitString (props) {
