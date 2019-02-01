@@ -1,0 +1,27 @@
+.InstaTextBox-Container {
+}
+
+.InstaTextBox {
+  margin: 3px 0;
+  color: white;
+  border-radius: 2px;
+  padding: 4px 35px 4px 10px;
+  width: auto;
+
+  font-size: 38px;
+  line-height: auto;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+
+  font-family: 'Montserrat', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 900;
+
+  box-shadow: -5px 5px 0px 1px rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+
+  transition: all 0.1s cubic-bezier(0.820, 0.085, 0.395, 0.895);
+}
+
+.switch {
+  box-shadow: 8px 8px 0px 1px rgba(255, 255, 255, 0.5);
+  transform: translateX(25px);
+}

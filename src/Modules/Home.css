@@ -1,9 +1,16 @@
 .Container {
   display: flex;
   flex: 1;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.Navigation {
+  display: flex;
+  flex: 1;
+
+  align-items: center;
 }
 
 .Heading {
@@ -21,86 +28,24 @@
 }
 
 .NavBlocks {
-
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .NavBlocks > div {
-  margin: 20px 0;
-}
-
-.NavBlocks-Block {
-  display: flex;
-  align-items: center;
-}
-
-.NavBlocks-Square {
-  z-index: 3;
-  fill: white;
-
-  border-radius: 15px;
-  border: 1px solid rgba(10, 19, 34, 0.4);
-
-  min-height: 100px;
-  min-width: 100px;
-  max-height: 300px;
-  max-width: 300px;
-
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-
-  /* background-color: rgba(123, 239, 178, 0.2); */
-  background-color: rgba(0, 22, 40, 0.3);
-  box-shadow: 5px 5px 35px rgba(0, 0, 0, 0.5) inset;
-}
-
-.NavBlocks-Square.glow {
-  box-shadow: inset 5px 5px 35px rgba(0, 0, 0, 0.5), 3px 3px 30px rgba(216, 188, 223, 0.06);
-}
-
-.NavBlocks-SideRect-Wrapper {
-  overflow: hidden;
-}
-
-.NavBlocks-SideRect {
-  display: flex;
-  align-items: stretch;
-  justify-content: center;
-  z-index: 1;
-
-  min-height: 60px;
-  min-width: 200px;
-
-  position: relative;
-  top: 0;
-  left: -200px;;
-
-  transition: left .5s cubic-bezier(0.820, 0.085, 0.395, 0.895);
-
-  font-family: "Source Code Pro",Menlo,Consolas,Monaco,monospace;
-  text-align: center;
-  text-transform: lowercase;
-  color: #f5d67b;
-  background-color: rgba(0, 22, 40, 0.3);
-}
-
-.NavBlocks-SideRect.show {
-  left: 0;
+  margin: 10px 0;
 }
 
 .Socials-Container {
-  margin-left: 25px;
-}
-
-.SocialBar {
+  flex: 0.1;
   display: flex;
-  align-items: center;
 }
 
-.SocialBar-Label {
-  margin-left: 8px;
-  color: white;
-  font-size: 14px;
-  font-family: "Source Code Pro",Menlo,Consolas,Monaco,monospace;
+.Socials-Container > div {
+  margin-right: 15px;
+}
+
+.Socials-Container > div:last-of-type {
+  margin: 0;
 }

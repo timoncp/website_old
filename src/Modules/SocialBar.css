@@ -1,0 +1,11 @@
+.SocialBar {
+  display: flex;
+  align-items: center;
+}
+
+.SocialBar-Label {
+  margin-left: 5px;
+  color: white;
+  font-size: 14px;
+  font-family: "Roboto",Menlo,Consolas,Monaco,monospace;
+}
