@@ -2,7 +2,6 @@ import React from 'react';
 import { Route } from 'react-router-dom';
 
 import { HomeModule, GeneralModules } from '../Modules';
-import genericPage from '../Modules/GenericPageTemplate';
 
 import './Content.css';
 
@@ -11,7 +10,7 @@ const Content = () => (
     <Route { ...HomeModule } />
     {
       GeneralModules.map(mod =>
-        <Route { ...mod } component={genericPage(mod.component, mod.name)} key={mod.name} />
+        <Route { ...mod } component={mod.component} key={mod.name} />
       )
     }
   </div>

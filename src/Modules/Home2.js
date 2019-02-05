@@ -1,7 +1,7 @@
 import React from 'react';
 
-import NavBlock from './NavBlock';
-import SocialIcon from './SocialIcon';
+import NavBlock from '../NavBlock';
+import SocialIcon from '../SocialIcon';
 
 import SvgWeb from '../Resources/svg_web';
 import SvgPerson from '../Resources/svg_person';

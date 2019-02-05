@@ -1,4 +1,5 @@
 import React from 'react';
+import genericPage from './GenericPageTemplate';
 
 const About = () => (
   <>
@@ -7,4 +8,4 @@ const About = () => (
   </>
 );
 
-export default About;
+export default genericPage(About, 'About');

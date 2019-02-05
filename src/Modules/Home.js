@@ -1,6 +1,6 @@
 import React from 'react';
-import InstaTextBox from './InstaTextBox';
-import SocialIcon from './SocialIcon';
+import InstaTextBox from '../Blocks/InstaTextBox';
+import SocialIcon from '../Blocks/SocialIcon';
 
 import './Home.css';
 
