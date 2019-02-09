@@ -40,12 +40,12 @@ const Home = (props) => {
           <InstaTextBox
             text='web applications'
             bgColor='blue'
-            linkTo='previous-work'
+            linkTo='web-applications'
           />
           <InstaTextBox
             text='data visualization'
             bgColor='red'
-            linkTo='about'
+            linkTo='data-visualization'
           />
           <InstaTextBox
             text='dev guidance'

@@ -52,7 +52,7 @@ const icons = {
   }
 };
 
-const Social = (props) => {
+const SocialIcon = (props) => {
   const icon = icons[props.name];
 
   return (
@@ -69,4 +69,4 @@ const Social = (props) => {
   )
 };
 
-export default Social;
+export default SocialIcon;

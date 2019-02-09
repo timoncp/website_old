@@ -1,0 +1,14 @@
+.TechIcon-Container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 5px;
+  height: 30px;
+}
+
+.TechIcon-Container > svg {
+  /* width: 25px; */
+  height: 100%;
+  width: auto;
+}

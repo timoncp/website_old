@@ -3,7 +3,7 @@ import { withRouter } from 'react-router-dom';
 import classNames from 'classnames';
 import Link from './Link';
 
-import modules from '../Modules';
+import modules from '../Pages';
 
 import './PageSelector.css';
 

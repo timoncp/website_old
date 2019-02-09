@@ -1,33 +1,7 @@
-.Page-Container {
-  flex: 1;
-
-  display: flex;
-  justify-content: center;
-
-  overflow-y: scroll;
-  overflow: -moz-scrollbars-none;
-  -ms-overflow-style: none;
-}
-
-.Page-Container::-webkit-scrollbar {
-  width: 0 !important
-}
-
-.Page-Content {
-  flex: 1;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .Page-SideNav {
-  flex: 0.3;
-
   position: fixed;
-
   top: 25%;
-  right: 4%;
+  right: 2%;
 
   display: flex;
   flex-direction: column;
@@ -43,7 +17,7 @@
 
 .Page-SideNav > a {
   margin: 5px 0;
-  border-bottom: 1px dotted lightgreen;
+  border-bottom: 1px dotted darkgray;
 }
 
 .Page-SideNav > a:hover {
@@ -60,4 +34,5 @@
   font-size: 16px;
   font-weight: 500;
   border-bottom-style: solid;
+  border-bottom-color: white;
 }

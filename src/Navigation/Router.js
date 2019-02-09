@@ -1,14 +1,22 @@
 import React from 'react';
-import { HashRouter as Router } from 'react-router-dom';
+import { HashRouter as Router, Route } from 'react-router-dom';
 
-import Content from './Content';
+import Home from '../Pages/Home';
+import WebApplications from '../Pages/WebApplications';
+import DataVisualization from '../Pages/DataVisualization';
+import PreviousWork from '../Pages/PreviousWork';
 
 import './Router.css';
 
 export default () => (
   <Router>
     <div className='Router'>
-      <Content />
+      <div className='Content Wallpaper'>
+        <Route exact path='/' component={Home} />
+        <Route path='/web-applications' component={WebApplications} />
+        <Route path='/data-visualization' component={DataVisualization} />
+        <Route path='/previous-work' component={PreviousWork} />
+      </div>
     </div>
   </Router>
 );
