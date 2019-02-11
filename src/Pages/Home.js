@@ -38,19 +38,19 @@ const Home = (props) => {
         </h1>
         <div className='NavBlocks'>
           <InstaTextBox
-            text='web applications'
+            text='work philosophy'
             bgColor='blue'
+            linkTo='work-philosophy'
+          />
+          <InstaTextBox
+            text='web applications'
+            bgColor='red'
             linkTo='web-applications'
           />
           <InstaTextBox
             text='data visualization'
-            bgColor='red'
-            linkTo='data-visualization'
-          />
-          <InstaTextBox
-            text='dev guidance'
             bgColor='yellow'
-            linkTo='previous-work'
+            linkTo='data-visualization'
           />
           <InstaTextBox
             text='previous work'
