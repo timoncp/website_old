@@ -22,7 +22,7 @@
   transition: all 0.1s cubic-bezier(0.820, 0.085, 0.395, 0.895);
 }
 
-.switch {
+.hovered {
   box-shadow: 8px 8px 0px 1px rgba(255, 255, 255, 0.5);
   transform: translateX(25px);
 }

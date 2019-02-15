@@ -1,9 +1,42 @@
 .Container {
   display: flex;
   flex: 1;
+}
+
+.LeftSplit {
+  flex: 1;
+  /* background-color: white; */
+
+  display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
+
+  padding-right: 25px;
+}
+
+.LeftSplit * {
+  background-color: black;
+  padding: 3px;
+}
+
+.LeftSplit span,
+.LeftSplit p,
+.LeftSplit h3 {
+  color: #e6e6e6;
+}
+
+.RightSplit {
+  flex: 1.5;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.RightSplit > div {
+  margin: 10px 0;
 }
 
 .Navigation {
