@@ -5,6 +5,7 @@
 }
 
 .InstaNavElement-Container:hover .InstaNavElement-Background {
+  filter: drop-shadow(2px 2px 10px rgba(0, 0, 0, 0.2)) saturate(1.5);
   opacity: 0.9;
   transition: all 0.01s cubic-bezier(0.220, 0.085, 0.395, 0.295);
 }

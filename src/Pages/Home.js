@@ -35,7 +35,7 @@ const Home = (props) => {
       <div className='LeftSplit'>
         <h1 className='LeftSplit-Heading'>Timon Carneci-Pröve</h1>
         <span className='LeftSplit-SubHeading'>Web Application Developer</span>
-        <p>And this is a paragraph</p>
+        <p className='LeftSplit-Description'>And this is a paragraph</p>
       </div>
       <div className='RightSplit'>
         <InstaNavElement
