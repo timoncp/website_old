@@ -33,8 +33,8 @@ const Home = (props) => {
         />
       </div>
       <div className='LeftSplit'>
-        <h1>Hello!</h1>
-        <span>This is a span</span>
+        <h1 className='LeftSplit-Heading'>Timon Carneci-Pröve</h1>
+        <span className='LeftSplit-SubHeading'>Web Application Developer</span>
         <p>And this is a paragraph</p>
       </div>
       <div className='RightSplit'>
