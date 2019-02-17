@@ -32,7 +32,7 @@ const twitter = (
 const icons = {
   github: {
     svg: github,
-    bgColor: '#181717'
+    bgColor: '#FFFFFF'
   },
   linkedIn: {
     svg: linkedIn,

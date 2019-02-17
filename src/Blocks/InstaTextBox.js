@@ -29,7 +29,7 @@ const InstaTextBox = (props) => {
         <p
           style={stringStyle}
           className={classNames('InstaTextBox', {
-            switch: isBoxHovered
+            hovered: isBoxHovered
           })}>
           {props.text}
         </p>

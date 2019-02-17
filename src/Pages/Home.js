@@ -1,5 +1,5 @@
 import React from 'react';
-import InstaTextBox from '../Blocks/InstaTextBox';
+import InstaNavElement from '../Blocks/InstaNavElement';
 import SocialIcon from '../Blocks/SocialIcon';
 
 import './Home.css';
@@ -32,32 +32,32 @@ const Home = (props) => {
           url='https://twitter.com/vanwhosville'
         />
       </div>
-      <div className='Navigation'>
-        <h1 className='Heading' id='homepage-handle'>
-          {'@vanwhosville'}
-        </h1>
-        <div className='NavBlocks'>
-          <InstaTextBox
-            text='work philosophy'
-            bgColor='blue'
-            linkTo='work-philosophy'
-          />
-          <InstaTextBox
-            text='web applications'
-            bgColor='red'
-            linkTo='web-applications'
-          />
-          <InstaTextBox
-            text='data visualization'
-            bgColor='yellow'
-            linkTo='data-visualization'
-          />
-          <InstaTextBox
-            text='previous work'
-            bgColor='pink'
-            linkTo='previous-work'
-          />
-        </div>
+      <div className='LeftSplit'>
+        <h1 className='LeftSplit-Heading'>Timon Carneci-Pröve</h1>
+        <span className='LeftSplit-SubHeading'>Web Application Developer</span>
+        <p className='LeftSplit-Description'>And this is a paragraph</p>
+      </div>
+      <div className='RightSplit'>
+        <InstaNavElement
+          text='work philosophy'
+          bgColor='blue'
+          linkTo='work-philosophy'
+        />
+        <InstaNavElement
+          text='web applications'
+          bgColor='red'
+          linkTo='web-applications'
+        />
+        <InstaNavElement
+          text='data visualization'
+          bgColor='yellow'
+          linkTo='data-visualization'
+        />
+        <InstaNavElement
+          text='previous work'
+          bgColor='pink'
+          linkTo='previous-work'
+        />
       </div>
     </div>
   );
