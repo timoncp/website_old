@@ -13,21 +13,15 @@ const palette = {
 
 const InstaNavElement = (props) => {
   const underlineColor = {
-    borderColor: palette[props.bgColor] || 'white'
-  };
-
-  const bgColor = {
-    backgroundColor: palette[props.bgColor] || 'white'
+    textDecorationColor: palette[props.bgColor] || 'white'
   };
 
   return (
     <div
       onClick={props.onClick}
-      className='InstaNavElement-Container'
-      style={underlineColor}>
-      <div style={bgColor} className='InstaNavElement-Background'></div>
+      className='InstaNavElement-Container'>
       <Link to={props.linkTo}>
-        <p className='InstaNavElement'>
+        <p className='InstaNavElement' style={underlineColor}>
           {props.text}
         </p>
       </Link>
