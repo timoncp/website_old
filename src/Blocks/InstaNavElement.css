@@ -20,7 +20,7 @@
 
   font-family: 'Montserrat', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 900;
-  /* font-style: italic; */
+  font-style: italic;
   text-decoration: dotted underline;
 
   cursor: pointer;
