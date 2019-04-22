@@ -1,5 +1,4 @@
 import React from 'react';
-import InstaNavElement from '../Blocks/InstaNavElement';
 import SocialIcon from '../Blocks/SocialIcon';
 
 import './Home.css';
@@ -10,7 +9,7 @@ const Home = (props) => {
       <div className='PersonalCorner'>
         © Timon Carneci-Pröve, ca. 2019
       </div>
-      <div className='SocialCorner'>
+      {/* <div className='SocialCorner'>
         <SocialIcon
           name='github'
           label='@timoncp'
@@ -31,33 +30,13 @@ const Home = (props) => {
           label='@vanwhosville'
           url='https://twitter.com/vanwhosville'
         />
-      </div>
+      </div> */}
       <div className='LeftSplit'>
-        <h1 className='LeftSplit-Heading'>Timon Carneci-Pröve</h1>
-        <span className='LeftSplit-SubHeading'>Web Application Developer</span>
-        <p className='LeftSplit-Description'>And this is a paragraph</p>
-      </div>
-      <div className='RightSplit'>
-        <InstaNavElement
-          text='work philosophy'
-          bgColor='blue'
-          linkTo='work-philosophy'
-        />
-        <InstaNavElement
-          text='web applications'
-          bgColor='red'
-          linkTo='web-applications'
-        />
-        <InstaNavElement
-          text='data visualization'
-          bgColor='yellow'
-          linkTo='data-visualization'
-        />
-        <InstaNavElement
-          text='previous work'
-          bgColor='pink'
-          linkTo='previous-work'
-        />
+        <h1 className='LeftSplit-Heading'>My name is Timon Carneci-Pröve and</h1>
+        <h1 className='LeftSplit-Heading'>I build custom web solutions</h1>
+        <h1 className='LeftSplit-Heading'>-- for you.</h1>
+        {/* <span className='LeftSplit-SubHeading'>Full-Stack Developer</span>
+        <p className='LeftSplit-Description'>Building custom web solutions for you - with passion.</p> */}
       </div>
     </div>
   );

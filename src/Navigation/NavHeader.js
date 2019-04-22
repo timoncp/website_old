@@ -1,27 +1,41 @@
 import React from 'react';
 import Link from '../Navigation/Link';
-import ArrowLeftSVG from '../Resources/svg_arrow_left';
-import BurgerSVG from '../Resources/svg_burger';
+import InstaNavElement from '../Blocks/InstaNavElement';
 
 import './NavHeader.css';
 
 const NavHeader = (props) => {
-  console.log(props.pageTitle);
-
   return (
-    <div className='Page-NavHeader'>
-      <div className='Page-NavHeader-BackButton'>
-        <Link to='/'>
-          <ArrowLeftSVG />
-        </Link>
+    <header className='Page-NavHeader'>
+      <div className='Page-NavHeader-LogoSide'>
+        <div className='LogoText'>
+          <span className='LogoText-Title'>timoncp.io</span>
+          <span className='LogoText-SubTitle'>fullstack developer</span>
+        </div>
       </div>
-      <h2 className='Page-Title' style={{
-        textDecorationColor: props.pageTitleUnderlineColor
-      }}>{props.pageTitle}</h2>
-      <div className='Page-NavHeader-BurgerMenu'>
-        <BurgerSVG />
+      <div className='Page-NavHeader-NavMenu'>
+        <InstaNavElement
+          text='about'
+          bgColor='red'
+          linkTo='about'
+        />
+        <InstaNavElement
+          text='process'
+          bgColor='yellow'
+          linkTo='process'
+        />
+        <InstaNavElement
+          text='previous work'
+          bgColor='blue'
+          linkTo='previous_work'
+        />
+        <InstaNavElement
+          text='contact'
+          bgColor='pink'
+          linkTo='contact'
+        />
       </div>
-    </div>
+    </header>
   );
 };
 

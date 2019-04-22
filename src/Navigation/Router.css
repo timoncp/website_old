@@ -7,13 +7,12 @@
 .Content {
   flex: 1;
   display: flex;
+  flex-direction: column;
+
+  background-color: #181b20;
 }
 
-.Wallpaper {
-  background: #2C5364;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #2C5364, #4b134f);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #2C5364, #4b134f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+.Wallpaper-Overlay {
+  flex: 1;
+  background: linear-gradient(to bottom, rgba(37, 128, 156, 0.1), rgba(139, 62, 139, 0.1));
 }
-
-
-
